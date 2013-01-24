@@ -1,0 +1,15 @@
+{
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"./vendor",
+		".bundle",
+		"tmp",
+		"log"
+	],
+	"theme": "Soda Light.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

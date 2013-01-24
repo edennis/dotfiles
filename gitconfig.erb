@@ -1,0 +1,37 @@
+[user]
+    name = Erick Dennis
+    email = <%= @email %>
+[color]
+    diff = auto
+    branch = auto
+    interactive = auto
+    ui = auto
+    status = auto
+[core]
+    editor = /usr/local/bin/subl -w
+    excludesfile = <%= ENV['HOME'] %>/.gitignore
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    df = diff
+    cp = cherry-pick
+    lg = log
+    p = pull
+    pr = pull --rebase
+[merge]
+    tool = opendiff
+[push]
+    default = tracking
+[log]
+    decorate = short
+[branch]
+    autosetupmerge = true
+[github]
+    user = edennis
+    token = <%= @github_token %>
+    password = <%= @github_password %>
+[gist]
+    private = yes
+    browse = yes

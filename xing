@@ -1,0 +1,17 @@
+sandbox:
+
+  rails: ~/sandbox/xing/rails-app
+  perl: ~/sandbox/xing/core
+  companies:
+    path: ~/sandbox/xing/companies
+  bestoffers:
+    path: ~/sandbox/xing/best_offers
+  events:
+    path: ~/sandbox/xing/events
+
+  default_host: main
+  default_app: companies
+  hosts:
+    main:
+      host: master-edennis
+      rawit_port: 4567

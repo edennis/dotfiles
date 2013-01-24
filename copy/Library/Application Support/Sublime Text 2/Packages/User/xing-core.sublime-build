@@ -1,0 +1,3 @@
+{
+    "cmd": ["xing", "sandbox", "sync", "--perl"]
+}
