@@ -29,6 +29,9 @@ if [ "$PS1" ]; then
     alias be='bundle exec'
     alias bo='bundle open'
 
+    # zeus
+    alias z='zeus'
+
     # git
     alias g='git'
     alias gx='gitx'
