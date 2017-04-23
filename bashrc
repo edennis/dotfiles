@@ -1,4 +1,4 @@
-export EDITOR=/usr/local/bin/subl
+export EDITOR="/usr/local/bin/atom -w"
 
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$()]/"
@@ -29,13 +29,10 @@ if [ "$PS1" ]; then
     alias be='bundle exec'
     alias bo='bundle open'
 
-    # zeus
-    alias z='zeus'
-
     # git
     alias g='git'
     alias gx='gitx'
-    alias st='stree'
+    alias gg='git grep'
 
     # homebrew sync
     alias brew_sync='brew list | cat ~/.brew_formulae - | sort | uniq > ~/.brew_formulae && brew install `cat ~/.brew_formulae`'
