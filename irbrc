@@ -1,4 +1,4 @@
-if defined?(Rails) && Rails.production?
+if defined?(Rails) && Rails.env.production?
   conf = IRB.conf[:PROMPT][IRB.conf[:PROMPT_MODE]]
   red = "\033[0;31m"
   reset = "\033[0m"
