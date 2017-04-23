@@ -8,7 +8,6 @@
     ui = auto
     status = auto
 [core]
-    editor = /usr/local/bin/subl -w
     excludesfile = <%= ENV['HOME'] %>/.gitignore
 [alias]
     co = checkout
@@ -18,8 +17,10 @@
     df = diff
     cp = cherry-pick
     lg = log
+    lgr = log --graph --full-history --all --color --pretty=format:“%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s”
     p = pull
-    pr = pull --rebase
+    pr = "!f() { git fetch -fu ${2:-$(git remote |grep ^upstream || echo origin)} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+    pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
 [merge]
     tool = opendiff
 [push]
