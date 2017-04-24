@@ -36,6 +36,9 @@ if [ "$PS1" ]; then
 
     # homebrew sync
     alias brew_sync='brew list | cat ~/.brew_formulae - | sort | uniq > ~/.brew_formulae && brew install `cat ~/.brew_formulae`'
+
+    export GOPATH="$HOME/sandbox/go"
+    PATH=$PATH:$GOPATH/bin
 fi
 
 # raise maxfiles for riak
