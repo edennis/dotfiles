@@ -17,6 +17,7 @@ node
 ossp-uuid
 pidof
 pkg-config
+pssh
 pwgen
 qt
 rabbitmq
