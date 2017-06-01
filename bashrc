@@ -29,10 +29,19 @@ if [ "$PS1" ]; then
     alias be='bundle exec'
     alias bo='bundle open'
 
-    # git
-    alias g='git'
+    # Git branch bash completion
+    if [ -f ~/.git-completion.bash ]; then
+      . ~/.git-completion.bash
+
+      # Add git completion to aliases
+      __git_complete g __git_main
+      __git_complete gg _git_grep
+
+      alias g='git'
+      alias gg='git grep'
+    fi
+
     alias gx='gitx'
-    alias gg='git grep'
 
     # homebrew sync
     alias brew_sync='brew list | cat ~/.brew_formulae - | sort | uniq > ~/.brew_formulae && brew install `cat ~/.brew_formulae`'
