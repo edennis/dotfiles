@@ -9,6 +9,8 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
