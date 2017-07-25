@@ -1,5 +1,3 @@
-export EDITOR="/usr/local/bin/atom -w"
-
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$()]/"
 }
@@ -39,6 +37,11 @@ if [ "$PS1" ]; then
 
       alias g='git'
       alias gg='git grep'
+    fi
+
+    # docker bash completion
+    if [ -f ~/.docker-completion.bash ]; then
+      . ~/.docker-completion.bash
     fi
 
     alias gx='gitx'
