@@ -15,6 +15,7 @@ mysql
 ngrep
 node
 ossp-uuid
+peco
 pidof
 pkg-config
 pssh
