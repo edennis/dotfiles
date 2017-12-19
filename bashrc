@@ -76,3 +76,6 @@ _ssh() {
     return 0
 }
 complete -F _ssh ssh
+
+# added by travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
