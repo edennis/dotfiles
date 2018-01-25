@@ -1,5 +1,5 @@
 export CLICOLOR=1
-PATH=/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH:$HOME/sandbox/cabify-tools
+PATH=/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH
 
 # setup rbenv
 eval "$(rbenv init -)"
