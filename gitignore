@@ -6,3 +6,7 @@
 ### Intellij ###
 .idea
 .vscode
+
+### project local stuff ###
+.env-local
+scratchpad.txt
