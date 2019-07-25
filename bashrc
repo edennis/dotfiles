@@ -60,9 +60,6 @@ if [ "$PS1" ]; then
     alias sen='docker run -v /var/run/docker.sock:/run/docker.sock -ti -e TERM tomastomecek/sen'
 fi
 
-# raise maxfiles for riak
-ulimit -n 8192
-
 # ssh host completion
 _ssh() {
     local cur prev opts
