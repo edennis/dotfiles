@@ -4,13 +4,11 @@ elasticsearch
 erlang
 gist
 git
-git-flow
 imagemagick
 jasper
 jpeg
 libtiff
 little-cms
-mongodb
 mysql
 ngrep
 node
@@ -22,8 +20,6 @@ pssh
 pwgen
 qt
 rabbitmq
-rbenv
 readline
 ruby-build
-scala
 unrar
