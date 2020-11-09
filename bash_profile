@@ -1,8 +1,5 @@
 export CLICOLOR=1
-PATH=/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH
-
-# setup rbenv
-eval "$(rbenv init -)"
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
