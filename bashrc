@@ -44,8 +44,6 @@ if [ "$PS1" ]; then
       . ~/.docker-completion.bash
     fi
 
-    alias gx='gitx'
-
     # homebrew sync
     alias brew_sync='brew list | cat ~/.brew_formulae - | sort | uniq > ~/.brew_formulae && brew install `cat ~/.brew_formulae`'
 
@@ -54,8 +52,6 @@ if [ "$PS1" ]; then
 
     # enable history for erlang/elixir
     export ERL_AFLAGS="-kernel shell_history enabled"
-
-    export AWS_PROFILE=twentybn
 
     alias sen='docker run -v /var/run/docker.sock:/run/docker.sock -ti -e TERM tomastomecek/sen'
 fi
@@ -74,4 +70,4 @@ _ssh() {
 complete -F _ssh ssh
 
 # added by travis gem
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+[ ! -s /Users/edennis/.travis/travis.sh ] || source /Users/edennis/.travis/travis.sh
