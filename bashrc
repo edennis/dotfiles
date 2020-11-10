@@ -52,6 +52,7 @@ if [ "$PS1" ]; then
 
     # enable history for erlang/elixir
     export ERL_AFLAGS="-kernel shell_history enabled"
+    export KERL_BUILD_DOCS=yes
 
     alias sen='docker run -v /var/run/docker.sock:/run/docker.sock -ti -e TERM tomastomecek/sen'
 fi
