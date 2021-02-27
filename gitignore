@@ -10,3 +10,6 @@
 ### project local stuff ###
 .env-local
 scratchpad.txt
+
+### VS Code stuff ###
+.elixir_ls
